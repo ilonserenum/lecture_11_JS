@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 11</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="form-panel">
+        <form action="" id="form-registration" method="POST">
+          <div>
+            <p>Username:</p>
+            <input
+              class="input-text"
+              type="text"
+              name="username"
+              placeholder="Enter your username..."
+              id="username"
+            />
+            <p class="error-text" id="error-username"></p>
+          </div>
+          <div>
+            <p>Password:</p>
+            <div class="input-password">
+              <input
+                class="input-text"
+                type="password"
+                name="password"
+                placeholder="Enter your password..."
+                id="password"
+              />
+              <i class="icon-password fa-solid fa-eye" id="showIcon" onclick="showHidePassword()"></i>
+            </div>
+            <p class="error-text" id="error-password"></p>
+          </div>
+          <div>
+            <input
+              class="input-text"
+              type="password"
+              name="password-rpt"
+              placeholder="Repeat your password..."
+              id="password-rpt"
+            />
+            <p class="error-text" id="error-password-rpt"></p>
+          </div>
+          <div>
+            <p>Email:</p>
+            <input 
+              class="input-text"
+              type="email" 
+              id="email" 
+              placeholder="Enter your email..." 
+            />
+            <p class="error-text" id="error-email"></p>
+          </div>
+          <div>
+            <p>Select your gender:</p>
+            <input type="radio" name="gender" id="gender-male" />
+            <label for="">Male</label>
+            <input type="radio" name="gender" id="gender-female" />
+            <label for="">Female</label>
+            <p class="error-text" id="error-gender"></p>
+          </div>
+          <div>
+            <input type="checkbox" id="terms-and-cond-check" name="terms-and-cond-check" />
+            <label for="terms-and-cond-check">I agree to the terms and conditions</label>
+            <p class="error-text" id="error-terms-and-cond-check"></p>
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

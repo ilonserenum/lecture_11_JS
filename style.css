@@ -1,0 +1,42 @@
+body {
+    background-color: #e8e8e8;
+}
+
+.input-text { 
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-panel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.input-password {
+    display: flex;
+    align-items: center;
+}
+
+.icon-password {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.error-text {
+    font-size: 14px;
+    color: red;
+}
